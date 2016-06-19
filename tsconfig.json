@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "outDir": "./lib",
+        "noImplicitAny": true,
+        "removeComments": false,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "inlineSourceMap": true,
+        "declaration": true,
+        "newLine": "LF",
+        "noEmitOnError": true,
+        "inlineSources": true,
+        "noImplicitReturns": true,
+        "stripInternal": true
+    },
+    "files": [
+        "./src/index.ts"
+    ]
+}

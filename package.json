@@ -1,0 +1,17 @@
+{
+  "name": "ts-skeleton",
+  "version": "0.0.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "scripts": {
+    "start": "node ./lib/index.js",
+    "build": "tsc -p .",
+    "watch": "tsc -w -p ."
+  },
+  "author": "mizdra",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "*",
+    "typings": "*"
+  }
+}
