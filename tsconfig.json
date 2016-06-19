@@ -16,6 +16,7 @@
         "stripInternal": true
     },
     "files": [
-        "./src/index.ts"
+        "./src/index.ts",
+        "./typings/index.d.ts"
     ]
 }
