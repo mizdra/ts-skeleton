@@ -1,19 +1,38 @@
 {
     "compilerOptions": {
         "module": "commonjs",
+        "moduleResolution": "node",
         "target": "es5",
+        "declaration": true,
+        "lib": [
+            "es2017",
+            "dom"
+        ],
+        "types": [
+            "node"
+        ],
         "outDir": "./lib",
         "noImplicitAny": true,
-        "removeComments": false,
+        "strictNullChecks": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitUseStrict": false,
+        "inlineSourceMap": true,
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
-        "inlineSourceMap": true,
-        "declaration": true,
-        "newLine": "LF",
+        "forceConsistentCasingInFileNames": true,
+        "traceResolution": false,
+        "listFiles": false,
+        "stripInternal": true,
+        "skipDefaultLibCheck": true,
+        "skipLibCheck": false,
+        "pretty": false,
         "noEmitOnError": true,
         "inlineSources": true,
-        "noImplicitReturns": true,
-        "stripInternal": true
+        "removeComments": false
     },
     "files": [
         "./src/index.ts"
