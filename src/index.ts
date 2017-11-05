@@ -1,7 +1,4 @@
-class Skeleton {
-    static sayMessage() {
-        console.log('☠ ts-skeleton ☠');
-    }
-}
+import 'tslib'
+import Skeleton from './skeleton'
 
-Skeleton.sayMessage();
+console.log(Skeleton.say('ts-skeleton'))

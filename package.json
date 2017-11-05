@@ -1,16 +1,37 @@
 {
-  "name": "ts-skeleton",
-  "version": "0.0.0",
-  "description": "",
-  "main": "./lib/index.js",
-  "scripts": {
-    "start": "node ./lib/index.js",
-    "build": "tsc -p .",
-    "watch": "tsc -w -p ."
-  },
-  "author": "mizdra",
+  "name": "@mizdra/ts-skeleton",
+  "version": "0.0.1",
+  "description": "The Prototype for Typescript Project",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "https://github.com/mizdra/simple-countdown.git",
+  "author": "mizdra <pp.mizdra@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "cross-env NODE_ENV=production tsc",
+    "dev": "tsc-watch --onSuccess 'run-s test start'",
+    "test": "mocha --require espower-typescript/guess test/**/*.ts",
+    "prepublishOnly": "run-s build test"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "src/"
+  ],
   "devDependencies": {
-    "typescript": "^2.0.3"
+    "@types/mocha": "^2.2.43",
+    "cross-env": "^5.0.5",
+    "espower-typescript": "^8.1.1",
+    "mocha": "^4.0.1",
+    "npm-run-all": "^4.1.1",
+    "power-assert": "^1.4.4",
+    "tsc-watch": "^1.0.8",
+    "tslint": "^5.7.0",
+    "tslint-config-standard": "^6.0.1",
+    "typescript": "^2.5.3"
+  },
+  "dependencies": {
+    "@types/node": "^8.0.47"
   }
 }
